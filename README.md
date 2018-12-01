@@ -1,2 +1,7 @@
 # HomerGUI
-Took a school project that was simple in design and improved upon it by adding sound and gifs to make the game more fun
+
+Took a school project that just had clip art images of a chicken, a farmer, a bag of wheat, a fox, and no sounds into a project that used gifs, background water sounds, and Homer Simpson lines from the Simpsons.
+
+I used Microsoft Visual Studio as my editor and C# as the programming language.
+
+I learned from this project how logic can remain in its own area and all the GUI just makes calls to the logic class.
