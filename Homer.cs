@@ -146,10 +146,9 @@ namespace HomerGUI
 
             if (location == Direction.South) //Homer at south bank
             {
-
-                if (northBank.Contains("Maggie") == true && northBank.Contains("Dog") == true && northBank.Contains("Poison") == true) // are Maggie, and Dog on the same bank without the poison or Homer present
+                if (northBank.Contains("Maggie") == true && northBank.Contains("Poison") == true && northBank.Contains("Dog") == true)// are Maggie, the poison, and the dog on the north bank without Homer present
                 {
-                    lonelyHomer = true;      //if so Homer is the only survivor of the 4 images
+                    lonelyHomer = true;         //if so everyone was left behind
                 }
             }
             return lonelyHomer;
@@ -157,7 +156,7 @@ namespace HomerGUI
         public bool GameOver()
         {
             bool endOfGame = false;     //defaults the ending of the game to false
-            if (MaggieAtePoison() == true || DogAttackedMaggie() == true || HomerAlone() == true || DetermineWin() == true) //if the player won or cause Maggie and Dog or cause Maggie and the poison to be together
+            if (MaggieAtePoison() == true || DogAttackedMaggie() == true || HomerAlone() == true || DetermineWin() == true) //if the player won or cause Maggie and Dog or cause Maggie and the poison to be together or everone but Homer are on the same bank
             {
                 endOfGame = true; //end the game
             }

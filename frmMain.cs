@@ -244,20 +244,18 @@ namespace HomerGUI
                     Sound_Effects(THREE);
                     
                 }
-                if (thelogic.HomerAlone() == true)//if game ended on Dog attacked Maggie
+                if (thelogic.HomerAlone() == true)
                 {
                     pbLose.Visible = true;
-                    lblDescription.Text = "\nGAMEOVER!!\n\nYou lose -  Homer is the only survivor,\nMaggie got a hold of poison,\n and Dog attacked Maggie";
+                    lblDescription.Text = "\nGAMEOVER!!\n\nYou lose -  Maggie ate the poison and\n                  Dog attacked Maggie";
                     Sound_Effects(THREE);
-
                 }
-
                 if (thelogic.DetermineWin() == true)//if game ended on Player won
                 {
                     pbWin.Visible = true;
                     lblDescription.Text = "\nGAMEOVER!!\n\nYou win -  Everyone has made it to\n                 the South Bank";
                     Sound_Effects(FOUR);
-                }
+                }                
             }
 
         }
